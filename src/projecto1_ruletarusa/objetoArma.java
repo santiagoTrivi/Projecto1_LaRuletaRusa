@@ -8,6 +8,28 @@ package projecto1_ruletarusa;
  *
  * @author Carvajal-Triviño
  */
-public class objetoArma {
+
+class NodoTambor{
+    boolean bulletposition;
+    NodoTambor next;
     
+    public NodoTambor(boolean bullet){
+        this.bulletposition = bullet;
+        this.next = null;
+    }
 }
+public class objetoArma {
+    NodoTambor head;
+    
+    public objetoArma(){
+        this.head = null;
+    }
+    
+    public void add(boolean bullet){
+        NodoTambor newnodo = new NodoTambor(bullet);
+        if (head == null){
+            
+        }
+    }
+}
+
